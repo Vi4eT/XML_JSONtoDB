@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TestDBDataSet" targetNamespace="http://tempuri.org/TestDBDataSet.xsd" xmlns:mstns="http://tempuri.org/TestDBDataSet.xsd" xmlns="http://tempuri.org/TestDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TestDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TestDBDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TestDBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Provider" msprop:Generator_RowClassName="ProviderRow" msprop:Generator_RowEvHandlerName="ProviderRowChangeEventHandler" msprop:Generator_RowDeletedName="ProviderRowDeleted" msprop:Generator_RowDeletingName="ProviderRowDeleting" msprop:Generator_RowEvArgName="ProviderRowChangeEvent" msprop:Generator_TablePropName="Provider" msprop:Generator_RowChangedName="ProviderRowChanged" msprop:Generator_UserTableName="Provider" msprop:Generator_RowChangingName="ProviderRowChanging" msprop:Generator_TableClassName="ProviderDataTable" msprop:Generator_TableVarName="tableProvider">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_p" msprop:Generator_UserColumnName="id_p" msprop:Generator_ColumnPropNameInTable="id_pColumn" msprop:Generator_ColumnPropNameInRow="id_p" msprop:Generator_ColumnVarNameInTable="columnid_p" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Income" msprop:Generator_RowClassName="IncomeRow" msprop:Generator_RowEvHandlerName="IncomeRowChangeEventHandler" msprop:Generator_RowDeletedName="IncomeRowDeleted" msprop:Generator_RowDeletingName="IncomeRowDeleting" msprop:Generator_RowEvArgName="IncomeRowChangeEvent" msprop:Generator_TablePropName="Income" msprop:Generator_RowChangedName="IncomeRowChanged" msprop:Generator_UserTableName="Income" msprop:Generator_RowChangingName="IncomeRowChanging" msprop:Generator_TableClassName="IncomeDataTable" msprop:Generator_TableVarName="tableIncome">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_prih" msprop:Generator_UserColumnName="id_prih" msprop:Generator_ColumnPropNameInTable="id_prihColumn" msprop:Generator_ColumnPropNameInRow="id_prih" msprop:Generator_ColumnVarNameInTable="columnid_prih" type="xs:int" />
+              <xs:element name="id_p" msprop:Generator_UserColumnName="id_p" msprop:Generator_ColumnPropNameInTable="id_pColumn" msprop:Generator_ColumnPropNameInRow="id_p" msprop:Generator_ColumnVarNameInTable="columnid_p" type="xs:int" minOccurs="0" />
+              <xs:element name="id_t" msprop:Generator_UserColumnName="id_t" msprop:Generator_ColumnPropNameInTable="id_tColumn" msprop:Generator_ColumnPropNameInRow="id_t" msprop:Generator_ColumnVarNameInTable="columnid_t" type="xs:int" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Product" msprop:Generator_RowClassName="ProductRow" msprop:Generator_RowEvHandlerName="ProductRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductRowDeleted" msprop:Generator_RowDeletingName="ProductRowDeleting" msprop:Generator_RowEvArgName="ProductRowChangeEvent" msprop:Generator_TablePropName="Product" msprop:Generator_RowChangedName="ProductRowChanged" msprop:Generator_UserTableName="Product" msprop:Generator_RowChangingName="ProductRowChanging" msprop:Generator_TableClassName="ProductDataTable" msprop:Generator_TableVarName="tableProduct">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Provider" />
+      <xs:field xpath="mstns:id_p" />
+    </xs:unique>
+    <xs:unique name="Income_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Income" />
+      <xs:field xpath="mstns:id_prih" />
+    </xs:unique>
+    <xs:unique name="Product_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Product" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
